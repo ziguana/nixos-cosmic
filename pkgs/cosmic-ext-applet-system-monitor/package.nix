@@ -19,6 +19,7 @@ rustPlatform.buildRustPackage {
     hash = "sha256-AwpZ2nb3YPfOAFpkoKZrDm4264UmVH96SmKLc0l81R4=";
   };
 
+  patches = [ ./0001-cargo-toml.patch ];
 
   useFetchCargoVendor = true;
   cargoHash = "";
